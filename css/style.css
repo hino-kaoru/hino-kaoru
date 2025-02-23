@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+.box1 {
+  max-width: 960px;
+
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.box1 div {
+  background: blue;
+  height: 300px;
+  width: 30%;
+  margin-bottom: 30px;
+}
+
+.box2 {
+  max-width: 960px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.box2 div {
+  background: red;
+  height: 300px;
+  width: 30%;
+  margin-bottom: 30px;
+}
