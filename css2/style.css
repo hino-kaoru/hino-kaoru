@@ -60,18 +60,19 @@ img {
 .menu1 {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
-
 
 }
 
+
 .menu1 li {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+
   padding: 20px;
 
   border-right: 0.9px solid;
+}
+
+.menu1 li:last-child {
+  border-right: none;
 }
 
 @media screen and (max-width: 767px) {
