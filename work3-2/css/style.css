@@ -1,12 +1,9 @@
 @charset "utf-8";
 
-
-
-
-
 /* cssリセット */
 
 /*利用するタグによってこちらの内容は増やす*/
+
 body,
 h1,
 h2,
@@ -19,6 +16,7 @@ dl {
   padding: 0;
   line-height: 1;
   /*デフォルトの文字色、font-familyを予め当てておく*/
+  color: #4c4c4c;
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
 }
 
@@ -42,54 +40,68 @@ img {
 
 
 
-
 .wrap {
+  background-color: #eeeeee;
   max-width: 960px;
-  padding: 20px;
+  margin: 0 auto;
+}
+
+.service {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+
+h1 {
+  color: green;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  padding: 30px;
   margin: 0 auto;
 
 }
 
-.menu {
 
 
-  padding: 20px;
+.image-container {
+
+  display: block;
+  width: 30%;
+  height: auto;
 }
 
-.menu1 {
-  display: flex;
-  justify-content: flex-end;
+.image-container img {
+  width: 100%;
 
 }
 
+.image-container h2 {
+  color: green;
+  border-left: 8px solid;
+  padding: 5px;
+  margin: 5px;
+  background-color: white;
 
-.menu1 li {
-
-  padding: 20px;
-
-  border-right: 0.9px solid;
 }
 
-.menu1 li:last-child {
-  border-right: none;
+.image-container p {
+  background-color: white;
 }
 
 @media screen and (max-width: 767px) {
-
   .wrap {
     display: block;
   }
 
-  .menu1 {
+  .service {
     display: block;
-
   }
 
-  .menu1 li {
-    border-right: none;
-    border-bottom: 0.9px solid;
+  .h1 {
+    display: block;
+  }
+
+  .image-container {
+    display: block;
   }
 }
