@@ -169,8 +169,9 @@ body {
 }
 
 .menu .menu_logo {
-  text-align: center;
+  margin: 0 auto;
   margin-bottom: 51px;
+  width: 213.8px;
 }
 
 
@@ -179,37 +180,44 @@ body {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  ;
+
 }
 
 
 
 .menu .menu_container .picture {
-  border-top-right-radius: 50px;
+
   width: 30%;
+}
+
+.images_menu {
+  border-top-right-radius: 50px;
 }
 
 .menu .menu_container .menu_type {
   font-size: 38px;
-  margin-top: -13px;
+  margin-top: -20px;
   margin-right: 13px;
 }
 
-.menu .menu_container .menu description {
+.menu_description {
   font-size: 17px;
-  margin-top: 43px;
+  line-height: 1.47;
+  margin-top: 10px;
 }
 
 
 /* ギャラリーのセクション */
-.gellery {
-  width: 1000px;
-  margin-top: 90px;
+.gallery {
+  max-width: 1000px;
+  margin-top: 40px;
 }
 
-.gellery .gallery_logo {
-  margin-top: 90px;
-  text-align: center;
+.gallery_logo {
+
+  margin: 0 auto;
+  width: 213.8px;
+  margin-bottom: 20px;
 }
 
 .gellery .photo_container {
@@ -226,8 +234,9 @@ body {
 
 /* イベント */
 .event .event_logo {
-  text-align: center;
+  margin: 0 auto;
   margin-top: 64px;
+  width: 213.8px;
 }
 
 .event_schedule {
@@ -236,6 +245,7 @@ body {
   border: solid;
   padding: 40px 160px;
   margin-bottom: 80px;
+  background-color: #fff;
 
 }
 
@@ -259,6 +269,44 @@ span .schedule_memo {
 
 }
 
+
+/* アクセス */
+.menu {
+  width: 1000px;
+}
+
+.access .access_logo {
+  margin: 0 auto;
+  margin-top: 72px;
+  width: 213.8px;
+}
+
+.map {
+  margin-top: 40px;
+  width: 100%;
+}
+
+/* フッター */
+.footer_wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 80px;
+
+}
+
+.footer_logo {
+  width: 27%;
+}
+
+address p {
+  line-height: 1.95;
+  font-size: 20px;
+}
+
+.footer_text {
+  margin-top: 72px;
+  font-size: 16px;
+}
 
 /* ハンバーガーメニュー */
 .hamburger,
