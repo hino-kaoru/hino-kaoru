@@ -50,7 +50,7 @@ img {
 }
 
 body {
-  background: #555;
+  background: #e8d9bf;
   max-width: 1000px;
 
   margin-left: 10px;
@@ -213,6 +213,11 @@ body {
   margin-top: 40px;
 }
 
+.gellery_photo {
+  width: 100%;
+  display: flex;
+}
+
 .gallery_logo {
 
   margin: 0 auto;
@@ -220,20 +225,16 @@ body {
   margin-bottom: 20px;
 }
 
-.gellery .photo_container {
-  width: 100%;
 
-}
 
-.gellery .gellery_photo {
+.gallery_photo img {
   width: 20%;
-  display: flex;
-  justify-content: space-between;
+
   margin-bottom: 58px;
 }
 
 /* イベント */
-.event .event_logo {
+.event_logo {
   margin: 0 auto;
   margin-top: 64px;
   width: 213.8px;
@@ -241,7 +242,7 @@ body {
 
 .event_schedule {
   margin-top: 64px;
-  text-align: center;
+  text-align: left;
   border: solid;
   padding: 40px 160px;
   margin-bottom: 80px;
@@ -260,39 +261,41 @@ body {
   border-bottom: solid;
 }
 
-span .schedule {
-  margin-left: 680px;
-}
+.schedule {
 
-span .schedule_memo {
-  margin-left: 40px;
+  padding-right: 20px;
 
 }
+
+
 
 
 /* アクセス */
-.menu {
-  width: 1000px;
+.access {
+  max-width: 1000px;
 }
 
-.access .access_logo {
+.access_logo {
   margin: 0 auto;
   margin-top: 72px;
   width: 213.8px;
 }
 
-.map {
+.map iframe {
   margin-top: 40px;
   width: 100%;
 }
 
 /* フッター */
-.footer_wrap {
+footer {
   max-width: 1000px;
+  background-color: #fff;
   margin: 0 auto;
-  margin-top: 80px;
-
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
+
+
 
 .footer_logo {
   width: 27%;
@@ -306,6 +309,7 @@ address p {
 .footer_text {
   margin-top: 72px;
   font-size: 16px;
+
 }
 
 /* ハンバーガーメニュー */
