@@ -51,11 +51,8 @@ img {
 
 body {
   background: #e8d9bf;
-  max-width: 1000px;
 
-  margin-left: 10px;
-  margin-right: 10px;
-  margin: 0 auto;
+
 
 }
 
@@ -76,6 +73,7 @@ body {
   left: 0;
   width: 100%;
   box-sizing: border-box;
+  z-index: 100;
 }
 
 .logo {
@@ -113,6 +111,8 @@ body {
   font-size: 30px;
   margin-top: 101px;
   text-align: center;
+  margin-left: 18%;
+  margin-right: 18%;
 }
 
 .introduction .title {
@@ -135,6 +135,9 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 100px;
+  max-width: 1000px;
+  margin: 100px auto 0;
+
 
 
 }
@@ -152,6 +155,11 @@ body {
 .text_container .about_us {
   margin-top: 55px;
   font-size: 44px;
+
+}
+
+.text_container {
+  width: 41%;
 }
 
 .text_container .message {
@@ -163,15 +171,16 @@ body {
 /* メニューのセクション */
 
 .menu {
-  width: 1000px;
-  margin-top: 103px;
+  max-width: 1000px;
+  margin: 103px auto 0;
+
 
 }
 
 .menu .menu_logo {
   margin: 0 auto;
   margin-bottom: 51px;
-  width: 213.8px;
+  width: 151.3px;
 }
 
 
@@ -209,7 +218,7 @@ body {
 
 /* ギャラリーのセクション */
 .gallery {
-  max-width: 1000px;
+
   margin-top: 40px;
 }
 
@@ -230,21 +239,28 @@ body {
 .gallery_photo img {
   width: 20%;
 
-  margin-bottom: 58px;
+
 }
 
 /* イベント */
+.event {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 .event_logo {
   margin: 0 auto;
   margin-top: 64px;
-  width: 213.8px;
+  width: 173.8px;
 }
 
 .event_schedule {
   margin-top: 64px;
   text-align: left;
   border: solid;
-  padding: 40px 160px;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0px;
   margin-bottom: 80px;
   background-color: #fff;
 
@@ -271,9 +287,7 @@ body {
 
 
 /* アクセス */
-.access {
-  max-width: 1000px;
-}
+
 
 .access_logo {
   margin: 0 auto;
@@ -288,27 +302,47 @@ body {
 
 /* フッター */
 footer {
-  max-width: 1000px;
+
   background-color: #fff;
   margin: 0 auto;
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
+.footer_wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  padding-top: 80px;
+}
 
 
 .footer_logo {
   width: 27%;
+
 }
 
 address p {
   line-height: 1.95;
   font-size: 20px;
+  font-style: normal;
+  padding-left: 60px;
 }
 
 .footer_text {
   margin-top: 72px;
   font-size: 16px;
+  text-align: center;
+
+}
+
+/* ボタン */
+.to_top {
+
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  width: 125px;
 
 }
 
@@ -318,6 +352,21 @@ address p {
   display: none;
 }
 
+.slick-dots {
+  bottom: 25px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #fff;
+}
+
+.slick-dots li button:before {
+  color: #fff;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
 
 
 
@@ -337,6 +386,7 @@ address p {
     right: 20px;
     height: 33px;
     cursor: pointer;
+    z-index: 9999;
   }
 
   .hamburger span {
@@ -408,4 +458,12 @@ address p {
     font-weight: bold;
     font-size: 18px;
   }
+}
+
+.header {
+  width: auto;
+}
+
+.introduction p {
+  font-size: 17px;
 }
