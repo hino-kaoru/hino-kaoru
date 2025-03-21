@@ -111,8 +111,7 @@ body {
   font-size: 30px;
   margin-top: 101px;
   text-align: center;
-  margin-left: 18%;
-  margin-right: 18%;
+
 }
 
 .introduction .title {
@@ -300,6 +299,10 @@ body {
   width: 100%;
 }
 
+iframe {
+  vertical-align: bottom;
+}
+
 /* フッター */
 footer {
 
@@ -341,7 +344,7 @@ address p {
 
   position: fixed;
   right: 20px;
-  top: 20px;
+  bottom: 20px;
   width: 125px;
 
 }
