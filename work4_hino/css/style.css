@@ -100,16 +100,20 @@ body {
   margin-right: 0;
 }
 
-.slider .img {
+.slider_pc {
   width: 100%;
 }
 
 
 /* HAVE a happy~の文 */
+.introduction {
+  margin-top: 103px;
+  margin-bottom: 94px;
+}
 
-.introduction p {
+.introduction .memo {
   font-size: 30px;
-  margin-top: 101px;
+
   text-align: center;
 
 }
@@ -126,7 +130,13 @@ body {
   margin-top: 44.2px;
   text-align: center;
   line-height: 1.65;
+
 }
+
+.br-sp {
+  display: none;
+}
+
 
 /* ABOUTのセクション */
 
@@ -141,14 +151,19 @@ body {
 
 }
 
-.about .coffeecup {
-  width: 50%;
+.coffeecup {
+
 
   border-bottom-right-radius: 50px;
 }
 
-.about .text_container .logo {
+.text_container .logo {
   margin-top: 63px;
+
+}
+
+.text_container .about_us_logo {
+  display: none;
 }
 
 .text_container .about_us {
@@ -183,17 +198,19 @@ body {
 }
 
 
-.menu .menu_container {
+.menu_container {
 
   display: flex;
   justify-content: space-between;
   width: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
 
 }
 
 
 
-.menu .menu_container .picture {
+.menu_container .picture {
 
   width: 30%;
 }
@@ -205,7 +222,7 @@ body {
 .menu .menu_container .menu_type {
   font-size: 38px;
   margin-top: -20px;
-  margin-right: 13px;
+  margin-left: 10px;
 }
 
 .menu_description {
@@ -250,7 +267,7 @@ body {
 .event_logo {
   margin: 0 auto;
   margin-top: 64px;
-  width: 173.8px;
+  width: 174px;
 }
 
 .event_schedule {
@@ -291,7 +308,7 @@ body {
 .access_logo {
   margin: 0 auto;
   margin-top: 72px;
-  width: 213.8px;
+  width: 214px;
 }
 
 .map iframe {
@@ -321,7 +338,7 @@ footer {
 
 
 .footer_logo {
-  width: 27%;
+  width: 227px;
 
 }
 
@@ -375,8 +392,7 @@ address p {
 
 
 /* スマホ版 */
-@media screen and (max-width:1100px) {
-
+@media screen and (max-width: 1100px) {
 
   .pc-nav {
     display: none;
@@ -461,12 +477,95 @@ address p {
     font-weight: bold;
     font-size: 18px;
   }
+
+  .introduction .title {
+    font-size: 10.13vw;
+  }
+
+  .text_container .about_us {
+    font-size: 36px;
+  }
+
 }
 
 .header {
   width: auto;
 }
 
-.introduction p {
-  font-size: 17px;
+
+@media screen and (max-width:767px) {
+  .slider_pc {
+    display: none;
+  }
+
+  .br-sp {
+    display: block;
+  }
+
+  .about {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+
+  .text_container .logo {
+    display: none;
+  }
+
+  .text_container .about_us_logo {
+    display: block;
+    text-align: center;
+  }
+
+  .menu_container {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 37px;
+    margin-right: 37px;
+  }
+
+  .menu_container .picture {
+
+    width: 100%;
+
+  }
+
+  .menu_description {
+    font-size: 17px;
+    padding-bottom: 44px;
+
+  }
+
+
+  .event_schedule {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .footer_wrap {
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin-left: 2%;
+    padding-top: 40px;
+  }
+
+
+
+
+  address p {
+    padding-top: 27px;
+  }
+
+  .to_top {
+
+    position: fixed;
+    right: 20px;
+    bottom: 205px;
+    width: 100px;
+
+  }
+
+
 }
