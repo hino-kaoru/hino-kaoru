@@ -162,6 +162,10 @@ body {
 
 }
 
+.coffeecup {
+  display: block;
+}
+
 .about_us_logo_sp {
   display: none;
 }
@@ -239,7 +243,7 @@ body {
 }
 
 .gellery_photo {
-  width: 100%;
+
   display: flex;
 }
 
@@ -508,6 +512,12 @@ address p {
     margin: 0 auto;
   }
 
+  .about_us_logo_sp {
+    display: block;
+    width: 27%;
+    padding-bottom: 10px;
+  }
+
   .text_container {
     width: auto;
   }
@@ -539,6 +549,9 @@ address p {
 
   }
 
+  .gallery_photo_sp {
+    width: 100%;
+  }
 
   .event_schedule {
     margin-left: 20px;

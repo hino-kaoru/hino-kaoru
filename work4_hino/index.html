@@ -122,10 +122,14 @@
   <section class="gallery" id="GALLERY">
     <h2 class="gallery_logo"><img src="images/gallery@2x.png" alt="ギャラリー　ロゴ"></h2>
     <div class="gallery_photo">
-      <img src="images/pc_gallary_05-100.jpg" alt="店内の様子"><img src="images/pc_gallary_04-100.jpg" alt="コーヒーカップと豆"><img
-        src="images/pc_gallary_03-100.jpg" alt="店内のインテリア"><img src="images/pc_gallary_02-100.jpg" alt="お店の看板"><img
-        src="images/pc_gallary_01-100.jpg" alt="カフェラテ"><img src="images/pc_gallary_06-100.jpg" alt="注文したコーヒーやケーキ">
-
+      <div class="slider_2">
+        <p><img src="images/pc_gallary_05-100.jpg" alt="店内の様子"></p>
+        <p><img src="images/pc_gallary_04-100.jpg" alt="コーヒーカップと豆"></p>
+        <p><img src="images/pc_gallary_03-100.jpg" alt="店内のインテリア" class="gallery_photo_sp"></p>
+        <p><img src="images/pc_gallary_02-100.jpg" alt="お店の看板"></p>
+        <p><img src="images/pc_gallary_01-100.jpg" alt="カフェラテ"></p>
+        <p><img src="images/pc_gallary_06-100.jpg" alt="注文したコーヒーやケーキ"></p>
+      </div>
     </div>
 
 
@@ -176,7 +180,7 @@
 
   <script>
     $(function () {
-      $('.hamburger').on('click', function () {
+      $('.hamburger,.sp_nav a').on('click', function () {
         $('.hamburger').toggleClass('open');
         $('.sp-nav').fadeToggle();
       });
@@ -187,6 +191,18 @@
         autoplaySpeed: 2000,
         arrows: false,
       });
+      $('.slider_2').slick({
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        responsive: [{
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1
+          }
+        }]
+      });
+
     });
 
   </script>
