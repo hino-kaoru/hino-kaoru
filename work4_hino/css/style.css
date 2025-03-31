@@ -236,13 +236,6 @@ body {
   margin-top: 40px;
 }
 
-.gellery_photo {
-  width: 100%;
-  display: flex;
-
-  box-sizing: border-box;
-
-}
 
 .gallery_logo {
 
@@ -250,8 +243,6 @@ body {
   width: 213.8px;
   margin-bottom: 20px;
 }
-
-
 
 
 /* イベント */
@@ -563,8 +554,11 @@ address p {
 
   }
 
-  .gallery_photo_sp {
+
+
+  .gallery_photo img {
     width: 100%;
+
   }
 
   .event_schedule {
