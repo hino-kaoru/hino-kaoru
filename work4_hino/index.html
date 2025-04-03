@@ -6,13 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>カフェサイト</title>
   <meta name="description" content="カフェサイトです">
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
-
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -72,7 +71,7 @@
     <p class="about_us_logo_sp"><img src="images/about_us@2x.png" alt="about_usのロゴ"></p>
     <p>
       <picture>
-        <source srcset="images/pc_about-100.jpg" media="(max-width: 767px)">
+        <source srcset="images/about_us@2x-100.jpg" media="(max-width: 767px)">
         <img src="images/pc_about-100.jpg" alt="三つのカップ" class="coffeecup">
       </picture>
     </p>
@@ -123,12 +122,23 @@
     <h2 class="gallery_logo"><img src="images/gallery@2x.png" alt="ギャラリー　ロゴ"></h2>
     <div class="gallery_photo">
       <div class="slider_2">
-        <p><img src="images/pc_gallary_05-100.jpg" alt="店内の様子"></p>
-        <p><img src="images/pc_gallary_04-100.jpg" alt="コーヒーカップと豆"></p>
-        <p><img src="images/pc_gallary_03-100.jpg" alt="店内のインテリア" class="gallery_photo_sp"></p>
-        <p><img src="images/pc_gallary_02-100.jpg" alt="お店の看板"></p>
-        <p><img src="images/pc_gallary_01-100.jpg" alt="カフェラテ"></p>
-        <p><img src="images/pc_gallary_06-100.jpg" alt="注文したコーヒーやケーキ"></p>
+        <p><a href="images/pc_gallary_05-100.jpg." data-lightbox="gallery_lightbox"><img
+              src="images/pc_gallary_05-100.jpg" alt="店内の様子"></a></p>
+
+        <p><a href="images/pc_gallary_04-100.jpg" data-lightbox="gallery_lightbox"><img
+              src="images/pc_gallary_04-100.jpg" alt="コーヒーカップと豆"></a></p>
+
+        <p><a href="images/pc_gallary_03-100.jpg" data-lightbox="gallery_lightbox"><img
+              src="images/pc_gallary_03-100.jpg" alt="店内のインテリア" class="gallery_photo_sp"></a></p>
+
+        <p><a href="images/pc_gallary_02-100.jpg" data-lightbox="gallery_lightbox"><img
+              src="images/pc_gallary_02-100.jpg" alt="お店の看板"></a></p>
+
+        <p><a href="images/pc_gallary_01-100.jpg" data-lightbox="gallery_lightbox"><img
+              src="images/pc_gallary_01-100.jpg" alt="カフェラテ"></a></p>
+
+        <p><a href="images/pc_gallary_06-100.jpg" data-lightbox="gallery_lightbox"><img
+              src="images/pc_gallary_06-100.jpg" alt="注文したコーヒーやケーキ"></a></p>
       </div>
     </div>
 
@@ -206,6 +216,16 @@
 
     });
 
+  </script>
+  <!-- ライトボックス -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"
+    type="text/javascript"></script>
+  <script>
+    lightbox.option({
+      //'オプション名': 値,
+      'showImageNumberLabel': false,
+
+    })
   </script>
 </body>
 

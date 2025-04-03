@@ -108,7 +108,7 @@ body {
 /* HAVE a happy~の文 */
 .introduction {
   margin-top: 103px;
-  margin-bottom: 94px;
+  margin-bottom: 2.3%;
 }
 
 .introduction .memo {
@@ -127,7 +127,7 @@ body {
 
 .introduction .concept {
   font-size: 23px;
-  margin-top: 44.2px;
+  margin-top: 22px;
   text-align: center;
   line-height: 1.65;
 
@@ -143,7 +143,7 @@ body {
 .about {
   display: flex;
   justify-content: space-between;
-  margin-top: 100px;
+
   max-width: 1000px;
   margin: 100px auto 0;
 
@@ -160,8 +160,6 @@ body {
   font-size: 80px;
 }
 
-
-
 .about_us_logo_sp {
   display: none;
 }
@@ -172,13 +170,13 @@ body {
 }
 
 .text_container .about_us {
-  margin-top: 55px;
+  margin-top: 48px;
   font-size: 44px;
   line-height: 1.38;
 }
 
 .text_container .message {
-  margin-top: 33px;
+  margin-top: 24px;
   font-size: 16px;
   line-height: 1.6;
 }
@@ -187,14 +185,14 @@ body {
 
 .menu {
   max-width: 1000px;
-  margin: 103px auto 0;
-
+  margin: 0 auto;
+  margin-top: 88px;
 
 }
 
-.menu .menu_logo {
+.menu_logo {
   margin: 0 auto;
-  margin-bottom: 51px;
+  margin-bottom: 32px;
   width: 151.3px;
 }
 
@@ -238,16 +236,18 @@ body {
 
 
 .gallery_logo {
-
   margin: 0 auto;
   width: 213.8px;
   margin-bottom: 20px;
 }
 
+.gallery_photo {
+  margin-bottom: 59px;
+}
 
 /* イベント */
 .event {
-  padding-top: 6.8%;
+
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -259,25 +259,21 @@ body {
 }
 
 .event_schedule {
-  margin-top: 1%;
+  margin-top: 30px;
 
   border: solid;
   display: flex;
   justify-content: center;
   padding: 40px 0px;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
   background-color: #fff;
-
 }
-
-
 
 .event .event_schedule ul li {
   list-style: none;
   font-size: 23px;
   padding: 16px;
 }
-
 
 .schedule_memo {
   text-decoration: underline;
@@ -289,20 +285,17 @@ body {
 
 }
 
-
-
-
 /* アクセス */
 
 
 .access_logo {
   margin: 0 auto;
-  margin-top: 72px;
+
   width: 214px;
 }
 
 .map iframe {
-  margin-top: 40px;
+  margin-top: 37px;
   width: 100%;
 }
 
@@ -315,7 +308,7 @@ footer {
 
   background-color: #fff;
   margin: 0 auto;
-  padding-top: 40px;
+
   padding-bottom: 40px;
 }
 
@@ -340,7 +333,7 @@ address p {
 }
 
 .footer_text {
-  margin-top: 72px;
+  margin-top: 74px;
   font-size: 16px;
   text-align: center;
 
@@ -378,7 +371,10 @@ address p {
   margin-bottom: 0;
 }
 
-
+/* ライトボックス */
+#lightbox .lb-container {
+  padding: 3px;
+}
 
 
 /* スマホ版 */
@@ -484,6 +480,30 @@ address p {
 
 
 @media screen and (max-width:767px) {
+  .header-wrap .logo {
+    width: 187px;
+  }
+
+  .introduction {
+    margin-top: 41px;
+  }
+
+  .introduction .memo {
+    font-size: 17px;
+  }
+
+  .introduction .title {
+    font-size: 38px;
+    line-height: 1.15;
+    margin-top: 22px;
+  }
+
+  .introduction .concept {
+    font-size: 16px;
+    line-height: 1.87;
+  }
+
+
   .slider_pc {
     display: none;
   }
@@ -500,7 +520,7 @@ address p {
   .about_us_logo_sp {
     display: block;
     margin: 0 auto;
-    width: 58%;
+    width: 160px;
     padding-bottom: 15px;
   }
 
@@ -534,6 +554,15 @@ address p {
     border-bottom-right-radius: 0;
   }
 
+  .menu {
+    margin-top: 15px;
+  }
+
+  .menu_logo {
+    width: 87px;
+    margin-bottom: 17px;
+  }
+
   .menu_container {
     display: block;
 
@@ -544,21 +573,23 @@ address p {
   .menu_container .picture {
 
     width: 100%;
-
   }
 
   .menu_description {
     font-size: 17px;
     padding-bottom: 44px;
-
-
   }
 
-
+  .gallery_logo {
+    width: 142px;
+  }
 
   .gallery_photo img {
     width: 100%;
+  }
 
+  .event_logo {
+    width: 100px;
   }
 
   .event_schedule {
@@ -567,26 +598,28 @@ address p {
     margin-left: 20px;
     margin-right: 20px;
     padding-bottom: 0;
+    margin-bottom: 26px;
 
   }
 
   .event_schedule ul {
     padding: 0;
-
     padding-left: 26px;
-
-
   }
 
   .schedule_memo {
     display: block;
-    width: 320px;
+
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     -webkit-text-overflow: ellipsis;
     -o-text-overflow: ellipsis;
 
+  }
+
+  .map iframe {
+    margin-top: 5px;
   }
 
   .footer_wrap {
@@ -597,18 +630,29 @@ address p {
     padding-top: 40px;
   }
 
-
-
+  .access_logo {
+    width: 124px;
+  }
 
   address p {
     padding-top: 27px;
     padding-left: 0;
+    font-size: 18px;
+    line-height: 1.72;
+  }
+
+  .footer_text {
+    margin-top: 0;
+  }
+
+  .footer_logo {
+    width: 226px;
   }
 
   .to_top {
 
     position: fixed;
-    right: 40px;
+    right: 12px;
     bottom: 205px;
     width: 100px;
 
