@@ -376,6 +376,10 @@ address p {
   padding: 3px;
 }
 
+.lb-data .lb-number {
+  display: none !important;
+}
+
 
 /* スマホ版 */
 @media screen and (max-width: 1100px) {
@@ -486,6 +490,7 @@ address p {
 
   .introduction {
     margin-top: 41px;
+    margin-bottom: 54px;
   }
 
   .introduction .memo {
@@ -554,9 +559,7 @@ address p {
     border-bottom-right-radius: 0;
   }
 
-  .menu {
-    margin-top: 15px;
-  }
+
 
   .menu_logo {
     width: 87px;
@@ -616,10 +619,16 @@ address p {
     -webkit-text-overflow: ellipsis;
     -o-text-overflow: ellipsis;
 
+
+  }
+
+  .event .event_schedule ul li {
+    font-size: 16px;
   }
 
   .map iframe {
-    margin-top: 5px;
+    margin-top: 26px;
+    height: 190px;
   }
 
   .footer_wrap {
@@ -653,7 +662,7 @@ address p {
 
     position: fixed;
     right: 12px;
-    bottom: 205px;
+    bottom: 12px;
     width: 100px;
 
   }
