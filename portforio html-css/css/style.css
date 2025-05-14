@@ -41,6 +41,19 @@ ul {
   list-style: none;
 }
 
+/* ボタンのリセット */
+button {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  outline: none;
+}
+
+
 img {
 
   vertical-align: bottom;
@@ -53,6 +66,7 @@ body {
 
 }
 
+/* ここからindexページ */
 
 /* ロゴ */
 .logo img {
@@ -206,7 +220,7 @@ header {
 
 .about_container {
   width: 44%;
-  margin-top: 80px;
+  margin-top: 30px;
 }
 
 .about_container .name {
@@ -547,11 +561,46 @@ input[type="email"] {
   margin-bottom: 0;
 }
 
-.contact_submit_button {
-  width: 420px;
+
+.button-area {
+  margin: 120px auto 0;
+  text-align: center;
+
+}
+
+/* ボタン */
+.button_sbbmit {
 
   margin: 120px auto 0;
+  text-align: center;
+
+  width: 50%;
+  max-width: 500px;
+  min-width: 200px;
+
+  border: none;
+  /* 枠線をなくす */
+  border-radius: 10px;
+  /* 角丸をつける */
+  padding: 10px 15px;
+  /* ボタンの内側の余白 */
+  margin: 5px;
+  /* ボタン同士の余白 */
+  background-color: #bc8b69;
+  /* ボタンの背景色 */
+  color: #f4ede1;
+  /* ボタンの文字色 */
+  text-align: center;
+  /* ボタンのテキストを中央揃えにする */
+  text-decoration: none;
+  /* テキストに下線をつけない */
+  font-size: 16px;
+  /* テキストのフォントサイズ */
+  cursor: pointer;
+  /* マウスポインタを変更する */
 }
+
+
 
 .footer-contact_image img {
   width: 100%;
@@ -559,9 +608,11 @@ input[type="email"] {
 
 /* thanksページ */
 
-.thanks-whole {
+.thanks-area {
+
   background: #9191ad;
   padding-top: 160px;
+
 }
 
 .logo_thanks {
@@ -611,10 +662,9 @@ input[type="email"] {
 
 }
 
-.thanks_button {
-  width: 420px;
-  margin: 0 auto;
-  margin-bottom: 100px;
+.button-area-thanks {
+  text-align: center;
+  margin-bottom: 80px;
 }
 
 
@@ -637,24 +687,16 @@ input[type="email"] {
   }
 
 
-  .header {
-    display: none;
-  }
-
   .content_wrap {
     max-width: 375px;
     margin: 0 auto;
   }
 
-
-  .logo {
-
+  .logo img {
     width: 50px;
-    margin-top: 30px;
+    margin-top: 40px;
     margin-left: 30px;
-
   }
-
 
   .fv {
     margin: 0;
@@ -727,7 +769,7 @@ input[type="email"] {
 
   .works_detail_image-container {
     width: 100%;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
   }
 
 
@@ -775,7 +817,7 @@ input[type="email"] {
 
   .contact_wrap {
     margin-top: 0;
-    max-width: 350px;
+    max-width: 355px;
     width: 100%;
     margin: 0 auto;
     padding-right: 0;
@@ -810,15 +852,15 @@ input[type="email"] {
 
   .works_detail_wrap {
 
-    max-width: 350px;
+    max-width: 355px;
     margin: 80px auto 0;
     width: 100%;
   }
 
   .works_detail_title {
     font-size: 14px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 60px;
+    margin-bottom: 20px;
   }
 
   .line {
@@ -855,6 +897,190 @@ input[type="email"] {
     width: 150px;
   }
 
+  /* スマホ版　works_ハンバーガー　詳細のページ */
+
+  .works_burger-image {
+    margin-top: 100px;
+    display: block;
+  }
+
+  .works_burger_detail_wrap {
+    max-width: 355px;
+    margin: 0 auto;
+  }
+
+  .works_luxury-burger_pc {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .works_pop-burger_pc {
+    width: 100%;
+  }
+
+
+  /* works　モバイルキャンペーンバナーのページ */
+  .works_banner_pc {
+    width: 100%;
+  }
+
+
+  /* スマホ版 aboutのページ */
+  .about-background_wrap {
+    max-width: 315px;
+    margin: 0 auto;
+  }
+
+  .title_about-background {
+    font-size: 50px;
+
+  }
+
+  .my-name {
+    font-size: 30px;
+    margin-top: 80px;
+  }
+
+  .background_text {
+    font-size: 14px;
+    line-height: 2.14;
+  }
+
+  .background_text {
+    margin-bottom: 30px;
+  }
+
+  .about-background_description {
+    display: block;
+    max-width: 315px;
+    margin: 0 auto;
+  }
+
+  .background_text-container {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+  .background_text01 {
+    font-size: 14px;
+    line-height: 2;
+  }
+
+  .background_text02 {
+    font-size: 14px;
+    line-height: 2;
+  }
+
+  .background_text03 {
+    font-size: 14px;
+    line-height: 2;
+  }
+
+  .skill_wrap {
+    display: block;
+    max-width: 315px;
+    margin: 0 auto;
+  }
+
+  .skill-container {
+    width: 100%;
+  }
+
+  .design_pc {
+    margin: 0 auto;
+
+  }
+
+  .coding_pc {
+    width: 100%;
+  }
+
+  .skill-software {
+    text-align: center;
+  }
+
+
+  /* スマホ版　Contactページ */
+  .contact_personal-information_container {
+    max-width: 315px;
+    margin: 0 auto;
+  }
+
+  .title-contact {
+    font-size: 40px;
+  }
+
+  /* スマホ版　Thanksページ */
+  .thanks-area {
+    max-width: 375px;
+  }
+
+  .pc_nav_thanks {
+    display: none;
+  }
+
+  .thanks-text {
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  .thanks-message {
+    font-size: 16px;
+    line-height: 2.18;
+    margin-bottom: 80px;
+  }
+
+  /* ボタン */
+  .button_thanks {
+
+    margin: 120px auto 0;
+    text-align: center;
+
+    width: 50%;
+    max-width: 500px;
+    min-width: 200px;
+
+    border: none;
+    /* 枠線をなくす */
+    border-radius: 10px;
+    /* 角丸をつける */
+    padding: 10px 15px;
+    /* ボタンの内側の余白 */
+
+    background-color: #f4ede1;
+    /* ボタンの背景色 */
+    color: #725039;
+    /* ボタンの文字色 */
+    text-align: center;
+    /* ボタンのテキストを中央揃えにする */
+    text-decoration: none;
+    /* テキストに下線をつけない */
+    font-size: 16px;
+    /* テキストのフォントサイズ */
+    font-weight: bold;
+    cursor: pointer;
+    /* マウスポインタを変更する */
+  }
+
+  .logo_thanks {
+    width: 50px;
+    margin-top: 40px;
+    margin-left: 30px;
+  }
+
+  /* ハンバーガーメニューのページ */
+
+  .sp_nav-hamburger-menu {
+    text-align: center;
+  }
+
+  .sp_nav-hamburger-menu ul {
+    font-size: 32px;
+
+    text-align: center;
+
+  }
 
 
 
