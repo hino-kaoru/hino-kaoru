@@ -1082,8 +1082,24 @@ input[type="email"] {
 
   }
 
+  .logo-menu_sp {
+    width: 50px;
+    margin-top: 40px;
+    margin-left: 30px;
+  }
 
+  .pc_nav_menu_sp {
+    font-size: 32px;
+    padding-top: 250px;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pc_nav_menu_sp ul li {
+    margin-bottom: 50px;
+  }
 
 
 }
