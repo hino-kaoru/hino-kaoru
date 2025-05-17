@@ -193,12 +193,64 @@ header {
 
 }
 
+/* works内のPCのマウスホバー時　ここから↓ */
+.works_detail_image-container {
+  position: relative;
+  /*親要素にrelative*/
+}
+
+.caption {
+  margin: 0;
+  font-size: 20px;
+  color: white;
+  position: absolute;
+
+  /*中央寄せの「おまじない」*/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  /* マスクを表示しない */
+  background-color: rgba(117, 85, 63, 0.6);
+  /* マスクは半透明 */
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.works_detail_image-container:hover .mask {
+  opacity: 1;
+  /* マスクを表示する */
+}
+
+/* PC画面にマウスホバー時　ここまで↑ */
 
 
-.view_more img {
-  width: 172px;
+.view_more_works {
+
   margin-top: 80px;
   margin-left: 70%;
+  margin-bottom: 80px;
+
+  overflow: hidden;
+  cursor: pointer;
+
+}
+
+.view_more-button {
+  width: 170px;
+  transition: all 0.3s;
+}
+
+.view_more_works:hover .view_more-button {
+  transform: scale(1.2);
 }
 
 /* about */
@@ -214,7 +266,7 @@ header {
   margin-top: 80px;
   width: 37%;
 
-  aspect-ratio: 2 / 3;
+
 
 }
 
@@ -235,9 +287,9 @@ header {
 }
 
 .view_more_about {
-  width: 172px;
-  margin-top: 80px;
-  margin-left: 70%;
+
+  margin-top: 55%;
+  margin-left: 55%;
 }
 
 /* contact */
@@ -281,6 +333,13 @@ header {
   bottom: 20px;
   width: 138px;
 
+}
+
+.back_to_top-ostrich {
+  position: fixed;
+  right: 50px;
+  bottom: 70px;
+  width: 80px;
 }
 
 /* worksページ */
@@ -433,7 +492,7 @@ dd {
 
 .background_text01 {
   font-size: 16px;
-  line-height: 2.18;
+  line-height: 2;
   margin-bottom: 24px;
 }
 
@@ -518,6 +577,7 @@ input[type="text"] {
   border: solid 1px #e3e6ea;
   /* 線の色 */
   background-color: #f4ede1;
+  box-sizing: border-box;
 }
 
 
@@ -533,6 +593,7 @@ input[type="email"] {
   border: solid 1px #f4ede1;
   /* 線の色 */
   background-color: #f4ede1;
+  box-sizing: border-box;
 }
 
 
@@ -551,6 +612,7 @@ input[type="email"] {
   background-color: #f4ede1;
   resize: none;
   /* リサイズ不可に */
+  box-sizing: border-box;
 }
 
 .input-field {
@@ -598,7 +660,14 @@ input[type="email"] {
   /* テキストのフォントサイズ */
   cursor: pointer;
   /* マウスポインタを変更する */
+
 }
+
+.button_sbbmit:hover {
+  background-color: #e3dad6;
+  color: #bc8b69;
+}
+
 
 
 
@@ -665,7 +734,134 @@ input[type="email"] {
 .button-area-thanks {
   text-align: center;
   margin-bottom: 80px;
+
 }
+
+.thanks_button {
+  width: 420px;
+  margin: 0 auto;
+  background: url(../images/thanks_button_pc@2x-8.png);
+}
+
+.thanks_button:hover {
+  background: url(../images/thanks_button_pc02@2x-50.png);
+}
+
+
+
+/* 背景を砂漠に固定↓ */
+.background::before {
+  position: fixed;
+  background-image: url(../images/background-sabaku.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100vh;
+  width: 100%;
+  z-index: -1;
+  content: '';
+}
+
+/* ハンバーガーメニュー　PC版は非表示 */
+.hamburger,
+.sp_nav {
+  display: none;
+}
+
+@media screen and (max-width:1100px) {
+
+  /* PCメニュー消してハンバーガーメニューを出す */
+  .pc_nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+
+    top: 10px;
+    right: 20px;
+    height: 33px;
+
+    cursor: pointer;
+  }
+
+  .hamburger span {
+    display: block;
+    width: 33px;
+    height: 2px;
+    background: #eeddbb;
+    position: relative;
+    top: 10px;
+
+  }
+
+  .hamburger span::before,
+  .hamburger span::after {
+    content: '';
+    display: block;
+    width: 33px;
+    height: 2px;
+    background: #eeddbb;
+    position: absolute;
+  }
+
+  .hamburger span::before {
+    bottom: 10px;
+
+  }
+
+  .hamburger span::after {
+    top: 10px;
+  }
+
+  .open span {
+    background: transparent;
+  }
+
+  .open span::before {
+    bottom: 0px;
+    transform: rotate(45deg);
+
+  }
+
+  .open span::after {
+    top: 0px;
+    transform: rotate(135deg);
+  }
+
+  .sp_nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: rgba(117, 85, 63, 0.8);
+  }
+
+  .sp_nav ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+
+  .sp_nav ul li {
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+    display: block;
+    font-family: century-gothic;
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+
+
+}
+
+
 
 
 
@@ -675,6 +871,11 @@ input[type="email"] {
     margin-left: 240px;
   }
 }
+
+
+
+
+
 
 
 /* スマホ版 */
@@ -774,10 +975,9 @@ input[type="email"] {
 
 
 
-  .view_more img {
+  .view_more_works {
     width: 126px;
-    margin-left: 0;
-    margin-top: 0;
+    margin: 0 auto;
   }
 
   /* about */
@@ -840,6 +1040,10 @@ input[type="email"] {
   }
 
   .back_to_top {
+    display: none;
+  }
+
+  .back_to_top-ostrich {
     display: none;
   }
 
@@ -1012,9 +1216,7 @@ input[type="email"] {
   }
 
   /* スマホ版　Thanksページ */
-  .thanks-area {
-    max-width: 375px;
-  }
+
 
   .pc_nav_thanks {
     display: none;
@@ -1067,38 +1269,6 @@ input[type="email"] {
     width: 50px;
     margin-top: 40px;
     margin-left: 30px;
-  }
-
-  /* ハンバーガーメニューのページ */
-
-  .sp_nav-hamburger-menu {
-    text-align: center;
-  }
-
-  .sp_nav-hamburger-menu ul {
-    font-size: 32px;
-
-    text-align: center;
-
-  }
-
-  .logo-menu_sp {
-    width: 50px;
-    margin-top: 40px;
-    margin-left: 30px;
-  }
-
-  .pc_nav_menu_sp {
-    font-size: 32px;
-    padding-top: 250px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .pc_nav_menu_sp ul li {
-    margin-bottom: 50px;
   }
 
 
